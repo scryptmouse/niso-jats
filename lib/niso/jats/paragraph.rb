@@ -2,7 +2,7 @@
 
 module Niso
   module Jats
-    class P < Lutaml::Model::Serializable
+    class Paragraph < Lutaml::Model::Serializable
       attribute :content, :string
       attribute :content_type, :string
       attribute :id, :string

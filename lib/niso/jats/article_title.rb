@@ -6,7 +6,6 @@ module Niso
       attribute :content, :string
       attribute :id, :string
       attribute :lang, :string
-      include BasicText
       attribute :break, Break, collection: true
 
       xml do

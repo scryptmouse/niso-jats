@@ -5,7 +5,6 @@ module Niso
     class TermHead < Lutaml::Model::Serializable
       attribute :content, :string
       attribute :id, :string
-      include BasicText
 
       xml do
         root "term-head"

@@ -7,7 +7,6 @@ module Niso
       attribute :arrange, :string
       attribute :id, :string
       attribute :specific_use, :string
-      include BasicText
 
       xml do
         root "sub"
