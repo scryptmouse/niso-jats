@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "niso_jats"
+require "niso-jats"
 require "xml-c14n"
 require "equivalent-xml"
 require "lutaml/model"
