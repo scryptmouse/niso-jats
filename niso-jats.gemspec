@@ -38,5 +38,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.11"
   spec.add_development_dependency "rubocop", "~> 1.58"
+  spec.add_development_dependency 'rubocop-performance', '~> 1.21', '>= 1.21.1'
   spec.add_development_dependency "xml-c14n"
 end
