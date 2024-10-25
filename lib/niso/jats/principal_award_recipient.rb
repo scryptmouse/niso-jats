@@ -1,14 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "contrib_id"
-require_relative "institution"
-require_relative "institution_wrap"
-require_relative "name"
-require_relative "name_alternatives"
-require_relative "string_name"
-
 module Niso
   module Jats
     class PrincipalAwardRecipient < Lutaml::Model::Serializable

@@ -1,13 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "def_list"
-require_relative "label"
-require_relative "list"
-require_relative "paragraph"
-require_relative "title"
-
 module Niso
   module Jats
     class ListItem < Lutaml::Model::Serializable

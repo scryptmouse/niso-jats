@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "paragraph"
-require_relative "title"
-
 module Niso
   module Jats
     class AuthorComment < Lutaml::Model::Serializable

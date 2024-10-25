@@ -1,15 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "alt_title"
-require_relative "label"
-require_relative "object_id"
-require_relative "question_preamble"
-require_relative "question_wrap"
-require_relative "subtitle"
-require_relative "title"
-
 module Niso
   module Jats
     class QuestionWrapGroup < Lutaml::Model::Serializable

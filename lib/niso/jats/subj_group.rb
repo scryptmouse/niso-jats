@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "compound_subject"
-require_relative "subject"
-
 module Niso
   module Jats
     class SubjGroup < Lutaml::Model::Serializable

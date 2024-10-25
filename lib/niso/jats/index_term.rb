@@ -1,11 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "see"
-require_relative "see_also"
-require_relative "term"
-
 module Niso
   module Jats
     class IndexTerm < Lutaml::Model::Serializable

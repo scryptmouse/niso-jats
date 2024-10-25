@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-# require_relative "paragraph"
-
 module Niso
   module Jats
     class P < Lutaml::Model::Serializable

@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "rb"
-require_relative "rt"
-
 module Niso
   module Jats
     class Ruby < Lutaml::Model::Serializable

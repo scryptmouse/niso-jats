@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "event"
-
 module Niso
   module Jats
     class PubHistory < Lutaml::Model::Serializable

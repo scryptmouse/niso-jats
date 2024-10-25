@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "break"
-require_relative "basic_text"
-
 module Niso
   module Jats
     class ArticleTitle < Lutaml::Model::Serializable

@@ -1,13 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "def_head"
-require_relative "def_item"
-require_relative "label"
-require_relative "term_head"
-require_relative "title"
-
 module Niso
   module Jats
     class DefList < Lutaml::Model::Serializable

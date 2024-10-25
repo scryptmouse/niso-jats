@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "collab"
-
 module Niso
   module Jats
     class CollabAlternatives < Lutaml::Model::Serializable

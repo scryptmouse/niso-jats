@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "contributed_resource_group"
-require_relative "funding_group"
-
 module Niso
   module Jats
     class SupportGroup < Lutaml::Model::Serializable

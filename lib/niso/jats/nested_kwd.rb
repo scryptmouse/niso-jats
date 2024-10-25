@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "compound_kwd"
-require_relative "kwd"
-
 module Niso
   module Jats
     class NestedKwd < Lutaml::Model::Serializable

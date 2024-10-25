@@ -1,11 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "custom_meta_group"
-require_relative "extended_by"
-require_relative "restricted_by"
-
 module Niso
   module Jats
     class ProcessingMeta < Lutaml::Model::Serializable

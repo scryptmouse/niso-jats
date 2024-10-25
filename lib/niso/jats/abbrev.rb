@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "def"
-
 module Niso
   module Jats
     class Abbrev < Lutaml::Model::Serializable

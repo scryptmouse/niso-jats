@@ -1,12 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "abbrev_journal_title"
-require_relative "journal_subtitle"
-require_relative "journal_title"
-require_relative "trans_title_group"
-
 module Niso
   module Jats
     class JournalTitleGroup < Lutaml::Model::Serializable

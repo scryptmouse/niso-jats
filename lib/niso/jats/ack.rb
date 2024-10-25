@@ -1,17 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "abstract"
-require_relative "kwd_group"
-require_relative "label"
-require_relative "object_id"
-require_relative "paragraph"
-require_relative "ref_list"
-require_relative "sec"
-require_relative "subj_group"
-require_relative "title"
-
 module Niso
   module Jats
     class Ack < Lutaml::Model::Serializable

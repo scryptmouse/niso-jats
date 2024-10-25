@@ -1,13 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "degrees"
-require_relative "given_names"
-require_relative "prefix"
-require_relative "suffix"
-require_relative "surname"
-
 module Niso
   module Jats
     class StringName < Lutaml::Model::Serializable

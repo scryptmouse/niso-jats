@@ -1,23 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "array"
-require_relative "chem_struct"
-require_relative "code"
-require_relative "graphic"
-require_relative "inline_graphic"
-require_relative "inline_media"
-require_relative "inline_supplementary_material"
-require_relative "media"
-require_relative "object_id"
-require_relative "preformat"
-require_relative "private_char"
-require_relative "supplementary_material"
-require_relative "table"
-require_relative "tex_math"
-require_relative "textual_form"
-
 module Niso
   module Jats
     class Alternatives < Lutaml::Model::Serializable
