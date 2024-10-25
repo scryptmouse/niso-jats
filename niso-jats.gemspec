@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative "lib/niso/jats/version"
 
 Gem::Specification.new do |spec|
@@ -30,14 +31,8 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 2.7.0"
 
-  spec.add_runtime_dependency "nokogiri"
-  spec.add_runtime_dependency "lutaml-model"
+  spec.add_dependency "lutaml-model"
+  spec.add_dependency "nokogiri"
 
-  spec.add_development_dependency "equivalent-xml"
-  spec.add_development_dependency "pry", "~> 0.12.2"
-  spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "rspec", "~> 3.11"
-  spec.add_development_dependency "rubocop", "~> 1.58"
-  spec.add_development_dependency 'rubocop-performance', '~> 1.21', '>= 1.21.1'
-  spec.add_development_dependency "xml-c14n"
+  spec.metadata["rubygems_mfa_required"] = "true"
 end

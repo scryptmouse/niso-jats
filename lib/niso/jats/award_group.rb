@@ -14,7 +14,8 @@ module Niso
       attribute :award_id, AwardId, collection: true
       attribute :award_name, AwardName
       attribute :award_desc, AwardDesc
-      attribute :principal_award_recipient, PrincipalAwardRecipient, collection: true
+      attribute :principal_award_recipient, PrincipalAwardRecipient,
+                collection: true
       attribute :principal_investigator, PrincipalInvestigator, collection: true
 
       xml do

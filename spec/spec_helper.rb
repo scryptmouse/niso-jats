@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require "niso/jats"
 require "xml-c14n"
 require "equivalent-xml"

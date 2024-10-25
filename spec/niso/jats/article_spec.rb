@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 RSpec.describe Niso::Jats::Article do
   xit "round-trips bmj_sample.xml with equivalent-xml" do
     input = fixture("bmj_sample.xml").read

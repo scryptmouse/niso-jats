@@ -34,7 +34,8 @@ module Niso
     autoload(:ArticleMeta, "niso/jats/article_meta")
     autoload(:ArticleTitle, "niso/jats/article_title")
     autoload(:ArticleVersion, "niso/jats/article_version")
-    autoload(:ArticleVersionAlternatives, "niso/jats/article_version_alternatives")
+    autoload(:ArticleVersionAlternatives,
+             "niso/jats/article_version_alternatives")
     autoload(:Attrib, "niso/jats/attrib")
     autoload(:AuthorComment, "niso/jats/author_comment")
     autoload(:AuthorNotes, "niso/jats/author_notes")
@@ -138,7 +139,8 @@ module Niso
     autoload(:InlineFormula, "niso/jats/inline_formula")
     autoload(:InlineGraphic, "niso/jats/inline_graphic")
     autoload(:InlineMedia, "niso/jats/inline_media")
-    autoload(:InlineSupplementaryMaterial, "niso/jats/inline_supplementary_material")
+    autoload(:InlineSupplementaryMaterial,
+             "niso/jats/inline_supplementary_material")
     autoload(:Institution, "niso/jats/institution")
     autoload(:InstitutionId, "niso/jats/institution_id")
     autoload(:InstitutionWrap, "niso/jats/institution_wrap")

@@ -7,7 +7,8 @@ module Niso
       attribute :specific_use, :string
       attribute :lang, :string
       attribute :funding_group, FundingGroup, collection: true
-      attribute :contributed_resource_group, ContributedResourceGroup, collection: true
+      attribute :contributed_resource_group, ContributedResourceGroup,
+                collection: true
 
       xml do
         root "support-group"
@@ -16,7 +17,8 @@ module Niso
         map_attribute "specific-use", to: :specific_use
         map_attribute "lang", to: :lang
         map_element "funding-group", to: :funding_group
-        map_element "contributed-resource-group", to: :contributed_resource_group
+        map_element "contributed-resource-group",
+                    to: :contributed_resource_group
       end
     end
   end
