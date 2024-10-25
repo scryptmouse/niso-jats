@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
-require "niso/jats"
+require "niso_jats"
 require "xml-c14n"
 require "equivalent-xml"
+require "lutaml/model"
+require "lutaml/model/xml_adapter/nokogiri_adapter"
+require "lutaml/model/json_adapter/standard_json_adapter"
 
 module TestHelper
   def fixture(name)
@@ -27,9 +30,6 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
-
-require "lutaml/model/xml_adapter/nokogiri_adapter"
-require "lutaml/model/json_adapter/standard_json_adapter"
 
 Lutaml::Model::Config.configure do |config|
   config.xml_adapter = Lutaml::Model::XmlAdapter::NokogiriAdapter

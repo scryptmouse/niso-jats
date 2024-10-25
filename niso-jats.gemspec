@@ -33,6 +33,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "lutaml-model"
   spec.add_dependency "nokogiri"
+  spec.add_dependency "zeitwerk", "~> 2.6.18"
 
   spec.metadata["rubygems_mfa_required"] = "true"
 end
