@@ -3,11 +3,16 @@
 inherit_from:
   - https://raw.githubusercontent.com/riboseinc/oss-guides/master/ci/rubocop.yml
 
-# local repo-specific modifications
-# ...
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
 
 AllCops:
   TargetRubyVersion: 2.7
-
-Metrics/BlockLength:
-  Enabled: false
+  SuggestExtensions: false
+  NewCops: enable

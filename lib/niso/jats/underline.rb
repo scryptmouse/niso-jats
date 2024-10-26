@@ -2,12 +2,6 @@
 
 module Niso
   module Jats
-    class ExtLink < Lutaml::Model::Serializable
-    end
-
-    class InlineSupplementaryMaterial < Lutaml::Model::Serializable
-    end
-
     class Underline < Lutaml::Model::Serializable
       attribute :content, :string
       attribute :id, :string

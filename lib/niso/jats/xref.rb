@@ -2,51 +2,6 @@
 
 module Niso
   module Jats
-    class Bold < Lutaml::Model::Serializable
-    end
-
-    class Italic < Lutaml::Model::Serializable
-    end
-
-    class Monospace < Lutaml::Model::Serializable
-    end
-
-    class FixedCase < Lutaml::Model::Serializable
-    end
-
-    class Overline < Lutaml::Model::Serializable
-    end
-
-    class Roman < Lutaml::Model::Serializable
-    end
-
-    class Ruby < Lutaml::Model::Serializable
-    end
-
-    class SansSerif < Lutaml::Model::Serializable
-    end
-
-    class NamedContent < Lutaml::Model::Serializable
-    end
-
-    class StyledContent < Lutaml::Model::Serializable
-    end
-
-    class Sc < Lutaml::Model::Serializable
-    end
-
-    class Sub < Lutaml::Model::Serializable
-    end
-
-    class Sup < Lutaml::Model::Serializable
-    end
-
-    class Strike < Lutaml::Model::Serializable
-    end
-
-    class Underline < Lutaml::Model::Serializable
-    end
-
     class Xref < Lutaml::Model::Serializable
       attribute :content, :string
       attribute :alt, :string

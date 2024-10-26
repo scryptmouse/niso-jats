@@ -1,8 +1,6 @@
 module Niso
   module Jats
     module BasicText
-      require_relative "target"
-
       def self.included(base) # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
         base.class_eval do
           attribute :email, Email, collection: true
