@@ -1,14 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "boxed_text"
-require_relative "fig"
-require_relative "fig_group"
-require_relative "object_id"
-require_relative "table_wrap"
-require_relative "table_wrap_group"
-
 module Niso
   module Jats
     class BlockAlternatives < Lutaml::Model::Serializable

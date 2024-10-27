@@ -1,17 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "addr_line"
-require_relative "city"
-require_relative "country"
-require_relative "fax"
-require_relative "institution"
-require_relative "institution_wrap"
-require_relative "phone"
-require_relative "postal_code"
-require_relative "state"
-
 module Niso
   module Jats
     class ConfLoc < Lutaml::Model::Serializable

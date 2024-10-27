@@ -1,12 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "institution"
-require_relative "institution_wrap"
-require_relative "sub"
-require_relative "sup"
-
 module Niso
   module Jats
     class CopyrightHolder < Lutaml::Model::Serializable

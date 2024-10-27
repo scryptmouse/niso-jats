@@ -1,11 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "award_group"
-require_relative "funding_statement"
-require_relative "open_access"
-
 module Niso
   module Jats
     class FundingGroup < Lutaml::Model::Serializable

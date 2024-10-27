@@ -1,23 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "array"
-require_relative "chem_struct"
-require_relative "code"
-require_relative "graphic"
-require_relative "inline_graphic"
-require_relative "inline_media"
-require_relative "inline_supplementary_material"
-require_relative "media"
-require_relative "object_id"
-require_relative "preformat"
-require_relative "private_char"
-require_relative "supplementary_material"
-require_relative "table"
-require_relative "tex_math"
-require_relative "textual_form"
-
 module Niso
   module Jats
     class Alternatives < Lutaml::Model::Serializable
@@ -29,7 +11,8 @@ module Niso
       attribute :graphic, Graphic, collection: true
       attribute :inline_graphic, InlineGraphic, collection: true
       attribute :inline_media, InlineMedia, collection: true
-      attribute :inline_supplementary_material, InlineSupplementaryMaterial, collection: true
+      attribute :inline_supplementary_material, InlineSupplementaryMaterial,
+                collection: true
       attribute :media, Media, collection: true
       attribute :preformat, Preformat, collection: true
       attribute :private_char, PrivateChar, collection: true
@@ -50,7 +33,8 @@ module Niso
         map_element "graphic", to: :graphic
         map_element "inline-graphic", to: :inline_graphic
         map_element "inline-media", to: :inline_media
-        map_element "inline-supplementary-material", to: :inline_supplementary_material
+        map_element "inline-supplementary-material",
+                    to: :inline_supplementary_material
         map_element "media", to: :media
         map_element "preformat", to: :preformat
         map_element "private-char", to: :private_char

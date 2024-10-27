@@ -1,80 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "abbrev"
-require_relative "address"
-require_relative "alternatives"
-require_relative "answer"
-require_relative "answer_set"
-require_relative "array"
-require_relative "award_id"
-require_relative "block_alternatives"
-require_relative "bold"
-require_relative "boxed_text"
-require_relative "chem_struct"
-require_relative "chem_struct_wrap"
-require_relative "citation_alternatives"
-require_relative "code"
-require_relative "def_list"
-require_relative "disp_formula"
-require_relative "disp_formula_group"
-require_relative "disp_quote"
-require_relative "element_citation"
-require_relative "email"
-require_relative "explanation"
-require_relative "ext_link"
-require_relative "fig"
-require_relative "fig_group"
-require_relative "fixed_case"
-require_relative "fn"
-require_relative "funding_source"
-require_relative "graphic"
-require_relative "index_term"
-require_relative "index_term_range_end"
-require_relative "inline_formula"
-require_relative "inline_graphic"
-require_relative "inline_media"
-require_relative "inline_supplementary_material"
-require_relative "italic"
-require_relative "list"
-require_relative "media"
-require_relative "milestone_end"
-require_relative "milestone_start"
-require_relative "mixed_citation"
-require_relative "monospace"
-require_relative "named_content"
-require_relative "nlm_citation"
-require_relative "open_access"
-require_relative "overline"
-require_relative "preformat"
-require_relative "price"
-require_relative "private_char"
-require_relative "question"
-require_relative "question_wrap"
-require_relative "question_wrap_group"
-require_relative "related_article"
-require_relative "related_object"
-require_relative "roman"
-require_relative "ruby"
-require_relative "sans_serif"
-require_relative "sc"
-require_relative "speech"
-require_relative "statement"
-require_relative "strike"
-require_relative "styled_content"
-require_relative "sub"
-require_relative "sup"
-require_relative "supplementary_material"
-require_relative "table_wrap"
-require_relative "table_wrap_group"
-require_relative "target"
-require_relative "tex_math"
-require_relative "underline"
-require_relative "uri"
-require_relative "verse_group"
-require_relative "xref"
-
 module Niso
   module Jats
     class LicenseP < Lutaml::Model::Serializable
@@ -85,7 +10,8 @@ module Niso
       attribute :email, Email, collection: true
       attribute :ext_link, ExtLink, collection: true
       attribute :uri, Uri, collection: true
-      attribute :inline_supplementary_material, InlineSupplementaryMaterial, collection: true
+      attribute :inline_supplementary_material, InlineSupplementaryMaterial,
+                collection: true
       attribute :related_article, RelatedArticle, collection: true
       attribute :related_object, RelatedObject, collection: true
       attribute :address, Address, collection: true
@@ -166,7 +92,8 @@ module Niso
         map_element "email", to: :email
         map_element "ext-link", to: :ext_link
         map_element "uri", to: :uri
-        map_element "inline-supplementary-material", to: :inline_supplementary_material
+        map_element "inline-supplementary-material",
+                    to: :inline_supplementary_material
         map_element "related-article", to: :related_article
         map_element "related-object", to: :related_object
         map_element "address", to: :address

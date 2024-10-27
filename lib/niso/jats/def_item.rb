@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "def"
-require_relative "term"
-
 module Niso
   module Jats
     class DefItem < Lutaml::Model::Serializable

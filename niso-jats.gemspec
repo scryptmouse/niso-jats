@@ -29,15 +29,10 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.required_ruby_version = ">= 2.7.0"
+  spec.required_ruby_version = ">= 3.0.0"
 
-  spec.add_runtime_dependency "nokogiri"
-  spec.add_runtime_dependency "lutaml-model"
-
-  spec.add_development_dependency "equivalent-xml"
-  spec.add_development_dependency "pry", "~> 0.12.2"
-  spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "rspec", "~> 3.11"
-  spec.add_development_dependency "rubocop", "~> 1.58"
-  spec.add_development_dependency "xml-c14n"
+  spec.add_dependency "bigdecimal"
+  spec.add_dependency "lutaml-model"
+  spec.add_dependency "nokogiri"
+  spec.add_dependency "zeitwerk", "~> 2.6.18"
 end

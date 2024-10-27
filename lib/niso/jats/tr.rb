@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "td"
-require_relative "th"
-
 module Niso
   module Jats
     class Tr < Lutaml::Model::Serializable

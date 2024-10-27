@@ -1,11 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "object_id"
-require_relative "paragraph"
-require_relative "speaker"
-
 module Niso
   module Jats
     class Speech < Lutaml::Model::Serializable

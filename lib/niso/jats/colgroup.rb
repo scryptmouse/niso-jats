@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "col"
-
 module Niso
   module Jats
     class Colgroup < Lutaml::Model::Serializable

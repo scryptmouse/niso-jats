@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "institution"
-require_relative "institution_wrap"
-
 module Niso
   module Jats
     class PublisherName < Lutaml::Model::Serializable

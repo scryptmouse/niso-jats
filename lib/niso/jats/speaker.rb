@@ -1,16 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "degrees"
-require_relative "fn"
-require_relative "given_names"
-require_relative "prefix"
-require_relative "suffix"
-require_relative "surname"
-require_relative "target"
-require_relative "xref"
-
 module Niso
   module Jats
     class Speaker < Lutaml::Model::Serializable

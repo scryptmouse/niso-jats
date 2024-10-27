@@ -1,18 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "ack"
-require_relative "app_group"
-require_relative "bio"
-require_relative "fn_group"
-require_relative "glossary"
-require_relative "label"
-require_relative "notes"
-require_relative "ref_list"
-require_relative "sec"
-require_relative "title"
-
 module Niso
   module Jats
     class Back < Lutaml::Model::Serializable

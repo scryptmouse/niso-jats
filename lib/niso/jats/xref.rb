@@ -1,70 +1,7 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-# require_relative "bold"
-# require_relative "fixed_case"
-# require_relative "italic"
-# require_relative "monospace"
-# require_relative "named_content"
-# require_relative "overline"
-# require_relative "roman"
-# require_relative "ruby"
-# require_relative "sans_serif"
-# require_relative "sc"
-# require_relative "strike"
-# require_relative "styled_content"
-# require_relative "sub"
-# require_relative "sup"
-# require_relative "underline"
-
 module Niso
   module Jats
-    class Bold < Lutaml::Model::Serializable
-    end
-
-    class Italic < Lutaml::Model::Serializable
-    end
-
-    class Monospace < Lutaml::Model::Serializable
-    end
-
-    class FixedCase < Lutaml::Model::Serializable
-    end
-
-    class Overline < Lutaml::Model::Serializable
-    end
-
-    class Roman < Lutaml::Model::Serializable
-    end
-
-    class Ruby < Lutaml::Model::Serializable
-    end
-
-    class SansSerif < Lutaml::Model::Serializable
-    end
-
-    class NamedContent < Lutaml::Model::Serializable
-    end
-
-    class StyledContent < Lutaml::Model::Serializable
-    end
-
-    class Sc < Lutaml::Model::Serializable
-    end
-
-    class Sub < Lutaml::Model::Serializable
-    end
-
-    class Sup < Lutaml::Model::Serializable
-    end
-
-    class Strike < Lutaml::Model::Serializable
-    end
-
-    class Underline < Lutaml::Model::Serializable
-    end
-
     class Xref < Lutaml::Model::Serializable
       attribute :content, :string
       attribute :alt, :string

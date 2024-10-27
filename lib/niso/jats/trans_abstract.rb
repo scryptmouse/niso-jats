@@ -1,13 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "label"
-require_relative "object_id"
-require_relative "paragraph"
-require_relative "sec"
-require_relative "title"
-
 module Niso
   module Jats
     class TransAbstract < Lutaml::Model::Serializable

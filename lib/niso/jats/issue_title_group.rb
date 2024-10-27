@@ -1,11 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "issue_subtitle"
-require_relative "issue_title"
-require_relative "trans_title_group"
-
 module Niso
   module Jats
     class IssueTitleGroup < Lutaml::Model::Serializable

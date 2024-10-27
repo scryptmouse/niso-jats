@@ -1,11 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "article_meta"
-require_relative "journal_meta"
-require_relative "notes"
-
 module Niso
   module Jats
     class Front < Lutaml::Model::Serializable

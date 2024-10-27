@@ -1,11 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "award_group"
-require_relative "resource_group"
-require_relative "support_description"
-
 module Niso
   module Jats
     class ContributedResourceGroup < Lutaml::Model::Serializable

@@ -1,12 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "copyright_holder"
-require_relative "copyright_statement"
-require_relative "copyright_year"
-require_relative "license"
-
 module Niso
   module Jats
     class Permissions < Lutaml::Model::Serializable

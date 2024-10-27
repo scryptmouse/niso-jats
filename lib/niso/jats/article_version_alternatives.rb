@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "article_version"
-
 module Niso
   module Jats
     class ArticleVersionAlternatives < Lutaml::Model::Serializable

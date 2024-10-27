@@ -1,11 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "label"
-require_relative "paragraph"
-require_relative "product"
-
 module Niso
   module Jats
     class Note < Lutaml::Model::Serializable

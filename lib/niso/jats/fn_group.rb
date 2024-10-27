@@ -1,11 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "fn"
-require_relative "label"
-require_relative "title"
-
 module Niso
   module Jats
     class FnGroup < Lutaml::Model::Serializable

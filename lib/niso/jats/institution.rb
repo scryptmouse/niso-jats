@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "sub"
-require_relative "sup"
-
 module Niso
   module Jats
     class Institution < Lutaml::Model::Serializable

@@ -1,17 +1,11 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "break"
-require_relative "basic_text"
-
 module Niso
   module Jats
     class ArticleTitle < Lutaml::Model::Serializable
       attribute :content, :string
       attribute :id, :string
       attribute :lang, :string
-      include BasicText
       attribute :break, Break, collection: true
 
       xml do
@@ -23,7 +17,8 @@ module Niso
         map_element "email", to: :email
         map_element "ext-link", to: :ext_link
         map_element "uri", to: :uri
-        map_element "inline-supplementary-material", to: :inline_supplementary_material
+        map_element "inline-supplementary-material",
+                    to: :inline_supplementary_material
         map_element "related-article", to: :related_article
         map_element "related-object", to: :related_object
         map_element "bold", to: :bold

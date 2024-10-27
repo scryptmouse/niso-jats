@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "license_paragraph"
-
 module Niso
   module Jats
     class License < Lutaml::Model::Serializable

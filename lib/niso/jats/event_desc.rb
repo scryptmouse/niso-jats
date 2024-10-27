@@ -1,21 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "article_id"
-require_relative "article_version"
-require_relative "article_version_alternatives"
-require_relative "date"
-require_relative "email"
-require_relative "ext_link"
-require_relative "isbn"
-require_relative "issn"
-require_relative "issn_l"
-require_relative "pub_date"
-require_relative "pub_date_not_available"
-require_relative "string_date"
-require_relative "uri"
-
 module Niso
   module Jats
     class EventDesc < Lutaml::Model::Serializable
@@ -31,7 +15,8 @@ module Niso
       attribute :issn_l, IssnL, collection: true
       attribute :isbn, Isbn, collection: true
       attribute :article_version, ArticleVersion, collection: true
-      attribute :article_version_alternatives, ArticleVersionAlternatives, collection: true
+      attribute :article_version_alternatives, ArticleVersionAlternatives,
+                collection: true
       attribute :date, Date, collection: true
       attribute :string_date, StringDate, collection: true
       attribute :pub_date, PubDate, collection: true
@@ -52,7 +37,8 @@ module Niso
         map_element "issn-l", to: :issn_l
         map_element "isbn", to: :isbn
         map_element "article-version", to: :article_version
-        map_element "article-version-alternatives", to: :article_version_alternatives
+        map_element "article-version-alternatives",
+                    to: :article_version_alternatives
         map_element "date", to: :date
         map_element "string-date", to: :string_date
         map_element "pub-date", to: :pub_date

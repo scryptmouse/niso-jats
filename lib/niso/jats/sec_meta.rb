@@ -1,14 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "abstract"
-require_relative "contrib_group"
-require_relative "kwd_group"
-require_relative "object_id"
-require_relative "permissions"
-require_relative "subj_group"
-
 module Niso
   module Jats
     class SecMeta < Lutaml::Model::Serializable

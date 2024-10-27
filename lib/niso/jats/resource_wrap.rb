@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "resource_id"
-require_relative "resource_name"
-
 module Niso
   module Jats
     class ResourceWrap < Lutaml::Model::Serializable

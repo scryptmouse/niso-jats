@@ -1,41 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "addr_line"
-require_relative "bold"
-require_relative "break"
-require_relative "city"
-require_relative "country"
-require_relative "email"
-require_relative "ext_link"
-require_relative "fax"
-require_relative "fixed_case"
-require_relative "fn"
-require_relative "inline_supplementary_material"
-require_relative "institution"
-require_relative "institution_wrap"
-require_relative "italic"
-require_relative "label"
-require_relative "monospace"
-require_relative "overline"
-require_relative "phone"
-require_relative "postal_code"
-require_relative "related_article"
-require_relative "related_object"
-require_relative "roman"
-require_relative "ruby"
-require_relative "sans_serif"
-require_relative "sc"
-require_relative "state"
-require_relative "strike"
-require_relative "sub"
-require_relative "sup"
-require_relative "target"
-require_relative "underline"
-require_relative "uri"
-require_relative "xref"
-
 module Niso
   module Jats
     class Aff < Lutaml::Model::Serializable
@@ -57,7 +21,8 @@ module Niso
       attribute :email, Email, collection: true
       attribute :ext_link, ExtLink, collection: true
       attribute :uri, Uri, collection: true
-      attribute :inline_supplementary_material, InlineSupplementaryMaterial, collection: true
+      attribute :inline_supplementary_material, InlineSupplementaryMaterial,
+                collection: true
       attribute :related_article, RelatedArticle, collection: true
       attribute :related_object, RelatedObject, collection: true
       attribute :break, Break, collection: true
@@ -100,7 +65,8 @@ module Niso
         map_element "email", to: :email
         map_element "ext-link", to: :ext_link
         map_element "uri", to: :uri
-        map_element "inline-supplementary-material", to: :inline_supplementary_material
+        map_element "inline-supplementary-material",
+                    to: :inline_supplementary_material
         map_element "related-article", to: :related_article
         map_element "related-object", to: :related_object
         map_element "break", to: :break

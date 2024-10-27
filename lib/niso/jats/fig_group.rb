@@ -1,25 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "abstract"
-require_relative "alt_text"
-require_relative "alternatives"
-require_relative "block_alternatives"
-require_relative "caption"
-require_relative "email"
-require_relative "ext_link"
-require_relative "fig"
-require_relative "graphic"
-require_relative "kwd_group"
-require_relative "label"
-require_relative "long_desc"
-require_relative "media"
-require_relative "object_id"
-require_relative "subj_group"
-require_relative "uri"
-require_relative "xref"
-
 module Niso
   module Jats
     class FigGroup < Lutaml::Model::Serializable

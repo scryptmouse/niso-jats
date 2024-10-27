@@ -1,43 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "abbrev"
-require_relative "alternatives"
-require_relative "bold"
-require_relative "chem_struct"
-require_relative "email"
-require_relative "ext_link"
-require_relative "fixed_case"
-require_relative "fn"
-require_relative "index_term"
-require_relative "index_term_range_end"
-require_relative "inline_formula"
-require_relative "inline_graphic"
-require_relative "inline_media"
-require_relative "inline_supplementary_material"
-require_relative "milestone_end"
-require_relative "milestone_start"
-require_relative "monospace"
-require_relative "named_content"
-require_relative "overline"
-require_relative "private_char"
-require_relative "related_article"
-require_relative "related_object"
-require_relative "roman"
-require_relative "ruby"
-require_relative "sans_serif"
-require_relative "sc"
-require_relative "strike"
-require_relative "styled_content"
-require_relative "sub"
-require_relative "sup"
-require_relative "target"
-require_relative "tex_math"
-require_relative "underline"
-require_relative "uri"
-require_relative "xref"
-
 module Niso
   module Jats
     class Italic < Lutaml::Model::Serializable
@@ -45,7 +7,6 @@ module Niso
       attribute :id, :string
       attribute :specific_use, :string
       attribute :toggle, :string, default: -> { "yes" }
-      include BasicText
 
       xml do
         root "italic"
@@ -57,7 +18,8 @@ module Niso
         map_element "email", to: :email
         map_element "ext-link", to: :ext_link
         map_element "uri", to: :uri
-        map_element "inline-supplementary-material", to: :inline_supplementary_material
+        map_element "inline-supplementary-material",
+                    to: :inline_supplementary_material
         map_element "related-article", to: :related_article
         map_element "related-object", to: :related_object
         map_element "bold", to: :bold

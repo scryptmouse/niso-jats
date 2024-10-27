@@ -1,15 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "count"
-require_relative "equation_count"
-require_relative "fig_count"
-require_relative "page_count"
-require_relative "ref_count"
-require_relative "table_count"
-require_relative "word_count"
-
 module Niso
   module Jats
     class Counts < Lutaml::Model::Serializable

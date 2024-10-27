@@ -1,54 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "abstract"
-require_relative "aff"
-require_relative "aff_alternatives"
-require_relative "article_categories"
-require_relative "article_id"
-require_relative "article_version"
-require_relative "article_version_alternatives"
-require_relative "author_notes"
-require_relative "conference"
-require_relative "contrib_group"
-require_relative "counts"
-require_relative "custom_meta_group"
-require_relative "elocation_id"
-require_relative "email"
-require_relative "ext_link"
-require_relative "fpage"
-require_relative "funding_group"
-require_relative "history"
-require_relative "isbn"
-require_relative "issue"
-require_relative "issue_id"
-require_relative "issue_part"
-require_relative "issue_sponsor"
-require_relative "issue_title"
-require_relative "issue_title_group"
-require_relative "kwd_group"
-require_relative "lpage"
-require_relative "page_range"
-require_relative "permissions"
-require_relative "product"
-require_relative "pub_date"
-require_relative "pub_date_not_available"
-require_relative "pub_history"
-require_relative "related_article"
-require_relative "related_object"
-require_relative "self_uri"
-require_relative "supplement"
-require_relative "supplementary_material"
-require_relative "support_group"
-require_relative "title_group"
-require_relative "trans_abstract"
-require_relative "uri"
-require_relative "volume"
-require_relative "volume_id"
-require_relative "volume_issue_group"
-require_relative "volume_series"
-
 module Niso
   module Jats
     class ArticleMeta < Lutaml::Model::Serializable
@@ -106,7 +57,8 @@ module Niso
         map_attribute "id", to: :id
         map_element "article-id", to: :article_id
         map_element "article-version", to: :article_version
-        map_element "article-version-alternatives", to: :article_version_alternatives
+        map_element "article-version-alternatives",
+                    to: :article_version_alternatives
         map_element "article-categories", to: :article_categories
         map_element "title-group", to: :title_group
         map_element "contrib-group", to: :contrib_group

@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "tr"
-
 module Niso
   module Jats
     class Tfoot < Lutaml::Model::Serializable

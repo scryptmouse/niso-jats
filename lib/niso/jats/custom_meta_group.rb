@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "custom_meta"
-
 module Niso
   module Jats
     class CustomMetaGroup < Lutaml::Model::Serializable

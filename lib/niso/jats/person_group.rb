@@ -1,18 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "aff"
-require_relative "aff_alternatives"
-require_relative "anonymous"
-require_relative "collab"
-require_relative "collab_alternatives"
-require_relative "etal"
-require_relative "name"
-require_relative "name_alternatives"
-require_relative "role"
-require_relative "string_name"
-
 module Niso
   module Jats
     class PersonGroup < Lutaml::Model::Serializable

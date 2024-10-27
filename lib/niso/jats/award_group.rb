@@ -1,15 +1,5 @@
 # frozen_string_literal: true
 
-require "lutaml/model"
-
-require_relative "award_desc"
-require_relative "award_id"
-require_relative "award_name"
-require_relative "funding_source"
-require_relative "principal_award_recipient"
-require_relative "principal_investigator"
-require_relative "support_source"
-
 module Niso
   module Jats
     class AwardGroup < Lutaml::Model::Serializable
@@ -24,7 +14,8 @@ module Niso
       attribute :award_id, AwardId, collection: true
       attribute :award_name, AwardName
       attribute :award_desc, AwardDesc
-      attribute :principal_award_recipient, PrincipalAwardRecipient, collection: true
+      attribute :principal_award_recipient, PrincipalAwardRecipient,
+                collection: true
       attribute :principal_investigator, PrincipalInvestigator, collection: true
 
       xml do
