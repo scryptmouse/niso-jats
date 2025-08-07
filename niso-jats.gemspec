@@ -34,6 +34,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "bigdecimal"
   spec.add_dependency "lutaml-model", "~> 0.7"
   spec.add_dependency "nokogiri"
-  spec.add_dependency "zeitwerk", "~> 2.6.18"
+  spec.add_dependency "zeitwerk", "~> 2.6"
   spec.metadata["rubygems_mfa_required"] = "true"
 end
